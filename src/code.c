@@ -28,7 +28,7 @@
  * Start with the first element and compare with the rest.
  */
 int find_max(int arr[], int n)
-{
+{ 
     int x = arr[0];
 for (int i = 0; i < n; i++)
 {  
