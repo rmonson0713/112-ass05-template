@@ -1,6 +1,8 @@
+#ifndef CODE_H 
+#define CODE_H
 /*
  * code.h - Header file for Lab 3
- * 
+
  * Instructions:
  * 1. At the top, add include guards to prevent multiple inclusion:
  *    #ifndef CODE_H
@@ -57,3 +59,4 @@ double heron(double x, double epsilon);
 /*
  * Remember to add #endif at the end!
  */
+ #endif

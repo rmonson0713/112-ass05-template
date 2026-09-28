@@ -16,8 +16,8 @@
  * 
  * Write your function implementations below each TODO.
  */
-
-
+#include "code.h"
+#include <stdio.h>
 
 /*
  * ============================================================================
@@ -29,7 +29,15 @@
  */
 int find_max(int arr[], int n)
 {
-    // TODO: Your implementation here
+    int x = arr[0];
+for (int i = 0; i < n; i++)
+{  
+    if (arr[i] > x)
+    {
+        x = arr[i];
+    }
+}
+    return x;
 }
 
 /*
@@ -42,7 +50,15 @@ int find_max(int arr[], int n)
  */
 int find_min(int arr[], int n)
 {
-    // TODO: Your implementation here
+      int x = arr[0];
+for (int i = 0; i < n; i++)
+{  
+    if (arr[i] < x)
+    {
+        x = arr[i];
+    }
+}
+    return x;
 }
 
 /*
@@ -55,7 +71,14 @@ int find_min(int arr[], int n)
  */
 long sum_array(int arr[], int n)
 {
-    // TODO: Your implementation here
+    long a = 0;
+    long b = 0;
+for (int i = 0; i < n; i++)
+{  
+    b = arr[i];
+    a = a + b;
+}
+    return a;
 }
 
 /*
@@ -68,7 +91,17 @@ long sum_array(int arr[], int n)
  */
 double average(float arr[], int n)
 {
-    // TODO: Your implementation here
+    float a = 0;
+    float b = 0;
+    double c = 0;
+    
+    for (int i = 0; i < n; i++)
+{  
+    b = arr[i];
+    a = a + b;
+    c = a / n;
+}
+    return c;
 }
 
 /*
@@ -88,7 +121,15 @@ double average(float arr[], int n)
  */
 int linear_search(int arr[], int n, int target)
 {
-    // TODO: Your implementation here
+    int i = 0;
+    while(i < n)
+    {
+        if (arr[i] == target)
+            return i;
+        else 
+            i++;
+    }
+    return -1;
 }
 
 
@@ -107,5 +148,22 @@ int linear_search(int arr[], int n, int target)
  */
 double heron(double x, double epsilon)
 {
-    // TODO: Your implementation here
+  double g = x/2.0;
+  double ng = 0;
+  double d = 0;
+while (1)
+{
+    ng = g;
+    g = (g + x/g) / 2.0;
+    d = g - ng;
+    if (d < 0)
+    {
+        d = -d;
+    }
+    if (d < epsilon)
+    {
+        break;
+    }
+}
+return g;
 }
