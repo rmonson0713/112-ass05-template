@@ -1,9 +1,9 @@
-//char *AUTHOR_NAME        = (char *) "Your Name";
-//char *AUTHOR_AUTHORSHIP  = (char *) "I acknowledge that I have worked on this
+// Rex Monson
+// I acknowledge that I have worked on this
 // assignment independently, except where explicitly noted and referenced.
 // Any collaboration or use of external resources has been properly cited.
 // I am fully aware of the consequences of academic dishonesty and agree to
-// abide by the university's academic integrity policy.";
+// abide by the university's academic integrity policy.
 
 // code.c — student implementation only
 
